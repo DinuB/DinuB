@@ -1,3 +1,3 @@
 var navbar = document.getElementById('navbar');
 
-navbar.innerHTML += ` <h3>Dinu Buzut</h3>`;
+navbar.innerHTML += ` <h2 class="name">DinuB</h2>`;

@@ -1,4 +1,14 @@
 #navbar{
   color: #fff;
-  background: #000;
+  background: #1E1E1E;
+
+  /* possition */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.name{
+  padding: 5px 5px;
+  color: #C0C0C0;
 }
