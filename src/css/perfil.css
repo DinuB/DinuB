@@ -1,6 +1,6 @@
 #perfil{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .img{
@@ -12,5 +12,8 @@
 }
 
 @media screen and (min-width: 500px){
-
+  #perfil{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
