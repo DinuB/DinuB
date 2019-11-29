@@ -40,9 +40,20 @@ minhaPromise()
 
 function dados(){
 
-  document.getElementById('perfil').innerHTML = `
+  document.getElementById('logo').innerHTML =
+    `
+      <span class='logo'>${json.name}</span>
+    `;
+
+
+  document.getElementById('perfil').innerHTML =
+  `
+  <div class='img'>
     <img src='${json.avatar_url}'>
-    <h2>${json.name} </h2>
-    <p>${json.bio}</p>`;
+  </div>
+  <div class='bio'>
+    <p>BIO: <br>${json.bio}</p>
+  </div>
+    `;
 
 }

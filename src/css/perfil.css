@@ -1,3 +1,16 @@
+#perfil{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img{
+  width: 300px;
+}
+
+.img img{
+  width: 100%;
+}
+
 @media screen and (min-width: 500px){
 
 }
