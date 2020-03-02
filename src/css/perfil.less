@@ -1,0 +1,45 @@
+// Extra small
+@xs-min: ~'(min-width: 500px)';
+@xs-max: ~'(max-width: 499px)';
+
+// Small
+@sm-min: ~'(min-width: 800px)';
+@sm-max: ~'(max-width: 799px)';
+
+// Medium
+@md-min: ~'(min-width: 1025px)';
+@md-max: ~'(max-width: 1024px)';
+
+// Large
+@lg-min: ~'(min-width: 1200px)';
+@lg-max: ~'(max-width: 1199px)';
+
+// Extra large
+@xl-min: ~'(min-width: 1920px)';
+@xl-max: ~'(max-width: 1919px)';
+
+#perfil{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .img{
+    max-width: 200px;
+    width: 100%;
+    background: #000;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+    img{
+      width: 100%;
+      max-width: 190px;
+      margin: 0 auto;
+    }
+  }
+
+  @media @xs-max{
+    flex-direction: column;
+
+  }
+}
