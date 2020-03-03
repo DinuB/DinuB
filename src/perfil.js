@@ -49,7 +49,7 @@ function dados(){
   document.getElementById('perfil').innerHTML =
   `
   <div class='img'>
-    <img src='${json.avatar_url}'>
+    <img src='src/img/fotocvdinufim.png'>
   </div>
   <div class='bio'>
     <p>BIO: <br>${json.bio}</p>
