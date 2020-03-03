@@ -1,0 +1,28 @@
+#navbar{
+  color: #fff;
+  background: #1E1E1E;
+  padding: 5px 10px;
+
+  /* possition */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+  /* display */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo{
+  font-size: 30px;
+  display: inline;
+}
+
+#social{
+  float: right;
+}
+
+#social i:not(:last-child){
+  margin: 0 10px 0 0;
+}
