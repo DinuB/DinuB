@@ -52,8 +52,8 @@ function dados(){
     <img src='src/img/fotocvdinufim.png'>
   </div>
   <div class='bio'>
-    <p>BIO: <br>${json.bio}</p>
+      <h3 style='color: #fff'>DinuB: UNDER CONSTRUTION!!!</h3>
   </div>
-    `;
+    `;s
 
 }
