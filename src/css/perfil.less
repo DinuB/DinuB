@@ -18,13 +18,28 @@
 @xl-min: ~'(min-width: 1920px)';
 @xl-max: ~'(max-width: 1919px)';
 
-#perfil{
+#profile{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   min-height: 400px;
   background: #000000db;
+
+  #profileContent{
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    
+    .title{
+      span{
+        font-size: 26px;
+        font-family: monospace;
+        font-weight: 600;
+      }
+    }
+  }
 
   .img{
     max-width: 300px;
