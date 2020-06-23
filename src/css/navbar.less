@@ -7,22 +7,21 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  left: 0;
 
   /* display */
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  #navbarContent{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-#logo{
-  font-size: 30px;
-  display: inline;
-}
-
-#social{
-  float: right;
-}
-
-#social i:not(:last-child){
-  margin: 0 10px 0 0;
-}
