@@ -1,3 +1,23 @@
+// Extra small
+@xs-min: ~'(min-width: 500px)';
+@xs-max: ~'(max-width: 499px)';
+
+// Small
+@sm-min: ~'(min-width: 800px)';
+@sm-max: ~'(max-width: 799px)';
+
+// Medium
+@md-min: ~'(min-width: 1025px)';
+@md-max: ~'(max-width: 1024px)';
+
+// Large
+@lg-min: ~'(min-width: 1200px)';
+@lg-max: ~'(max-width: 1199px)';
+
+// Extra large
+@xl-min: ~'(min-width: 1920px)';
+@xl-max: ~'(max-width: 1919px)';
+
 @font-face {
   font-family: wallpoet;
   src: url(../fonts/wallpoet/Wallpoet-Regular.ttf);
@@ -27,24 +47,82 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    #logo{
-      font-size: 26px;
-      font-family: wallpoet;
+    @media @xs-max{
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
-
-    #social{
-      .menuLink{
+    #rightNavbar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @media @xs-max{
+        width: 100%;
+      }
+      #logo{
+        font-size: 26px;
         font-family: wallpoet;
+      }
+      #mobileButton{
+        &.activeButton{
+          color: #fff;
+        }
+        @media @xs-min{
+          display: none;
+        }
+        
+      }
+    }
+    #menu{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      transition: all ease 0.5s;
+      &.activeMenu{
+        display: flex;
+        transition: all ease 0.5s;
+      }
+      @media @xs-max{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+      }
+
+      #menuLinks{
+        @media @xs-max{
+          width: 100%;
+        }
+        .menuLink{
+          font-family: wallpoet;
+          @media @xs-max{
+            display: block;
+          }
+        }
+      }
+      
+      #social{
+        @media @xs-max{
+          width: 100%;
+          max-width: 50px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
       }
 
       a{
-        margin: 0 0 0 10px;
+        margin: 0 0 0 20px;
         font-size: 18px;
         text-decoration: none;
         color: #fffc;
         &:hover{
           color: #fff;
+        }
+        @media @xs-max{
+          margin: 20px 0 0;
         }
       }
     }

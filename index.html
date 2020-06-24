@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
     <script src="src/less.min.js" ></script>
-
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <style media="screen">
       * {
         margin: 0;
@@ -32,14 +32,23 @@
     <!-- Navbar -->
     <div id="navbar">
       <div id="navbarContent">
-        <div id="logo">
-          Dinu_B
+        <div id="rightNavbar">
+          <div id="logo">
+            Dinu_B
+          </div>
+          <div id="mobileButton" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
         </div>
-        <div id="social">
-          <a href="" class="menuLink">home</a>
-          <a href="" class="menuLink">< /code ></a>
-          <a href="https://www.linkedin.com/in/dinubuzut/" target="_blank" class="fab fa-linkedin-in"></a>
-          <a href="https://github.com/DinuB" target="_blank" class="fab fa-github"></a>
+        <div id="menu">
+          <div id="menuLinks">
+            <a href="" class="menuLink">home</a>
+            <a href="" class="menuLink">< /code ></a>
+          </div>
+          <div id="social">
+            <a href="https://www.linkedin.com/in/dinubuzut/" target="_blank" class="fab fa-linkedin-in"></a>
+            <a href="https://github.com/DinuB" target="_blank" class="fab fa-github"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -51,6 +60,12 @@
         <div class="title">
           <span class="myTitle">
             Dinu_B
+          </span>
+          <br>
+          <br>
+
+          <span class="text">
+
           </span>
         </div>
       </div>
