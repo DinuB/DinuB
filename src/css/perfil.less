@@ -36,6 +36,10 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .title{
       span{
@@ -44,28 +48,55 @@
         color: #fffc;
       }
     }
-  }
 
-  .img{
-    max-width: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-      position: relative;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-      background: transparent;
+    #about{
+      // width: 50%;
+      margin: 0 0 0 auto;
+      @media @xs-max{
+        // width: 50%;
+        // margin: 0 0 0 auto;
+      }
+      #aboutTitle{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        color: #fffc;
+        span{
+          font-size: 22px;
+          font-family: monospace;
+          font-weight: bold;
+          #enextLogo svg{
+            width: 55px;
+            position: relative;
+            top: 8px;
+            text-decoration: none;
+            color: #fffc;
+            outline: none;
+          }
+        }
+      }
+
+      #aboutDesc{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        color: #fffc;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: monospace;
+
+        ul{
+          margin: 10px 0 0 0;
+          li{
+            list-style: none;
+            padding: 5px 0 0;
+          }
+        }
+      }
     }
   }
-
-  @media @xs-max{
-    flex-direction: column;
-
-  }
-  .bio{
-    text-align: center;
-  }
 }
+
+

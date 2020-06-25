@@ -88,16 +88,20 @@
         flex-direction: column;
         text-align: center;
         width: 100%;
+        padding: 15px 0 0;
       }
 
       #menuLinks{
         @media @xs-max{
           width: 100%;
+          border-top: 1px solid rgba(255, 255, 255, 0.23921568627450981);
         }
         .menuLink{
           font-family: wallpoet;
           @media @xs-max{
             display: block;
+            padding: 15px 0;
+            border-bottom: solid 1px #ffffff3d;
           }
         }
       }
@@ -105,11 +109,15 @@
       #social{
         @media @xs-max{
           width: 100%;
-          max-width: 50px;
+          max-width: 80px;
           margin: 0 auto;
           display: flex;
           align-items: center;
           justify-content: space-between;
+          padding: 15px 0 0;
+        }
+        .socialItem{
+          font-size: 21px !important;
         }
       }
 
@@ -118,11 +126,12 @@
         font-size: 18px;
         text-decoration: none;
         color: #fffc;
+        outline: none;
         &:hover{
           color: #fff;
         }
         @media @xs-max{
-          margin: 20px 0 0;
+          margin: 0 auto;
         }
       }
     }
