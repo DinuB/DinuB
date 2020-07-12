@@ -130,6 +130,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    @media @sm-min{
+      flex-direction: row;
+    }
 
     &_image{
       max-width: 320px;

@@ -24,10 +24,31 @@
         text-decoration-style: none;
         outline: none;
       }
+
+      /* width */
+        body::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        /* Track */
+        body::-webkit-scrollbar-track {
+          background: #888;
+        }
+
+        /* Handle */
+        body::-webkit-scrollbar-thumb {
+          background: #1E1E1E;
+          /* border-radius: 10px; */
+        }
+
+        /* Handle on hover */
+        body::-webkit-scrollbar-thumb:hover {
+          background: #000000db;
+        }
     </style>
 
   </head>
-  <body>
+  <body style="overflow-x: hidden; overflow-y: auto;">
 
     <!-- Navbar -->
     <div id="navbar">
