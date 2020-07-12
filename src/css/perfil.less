@@ -30,7 +30,7 @@
   justify-content: center;
   min-height: 400px;
   background: #000000db;
-
+  padding: 56px 0 0;
   #profileContent{
     max-width: 1200px;
     width: 100%;
@@ -120,7 +120,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 15px;
+  // padding: 50px 5px;
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -134,18 +134,33 @@
     @media @sm-min{
       flex-direction: row;
     }
-
+    &_desc{
+      margin: 20px 0 0 0;
+      @media @sm-min{
+        margin: 0 0 0 50px;
+      }
+    }
     &_image{
-      max-width: 320px;
+      max-width: 280px;
       width: 100%;
+      @media @sm-min{
+        max-width: 320px;
+      }
     }
     &_title{
       font-family: Arial, Helvetica, sans-serif;
       font-weight: bold;
       font-size: 26px;
+      @media @sm-min{
+        font-size: 32px;
+      }
     }
     &_list{
       margin: 0 0 0 20px;
+      font-size: 18px;
+      @media @sm-min{
+        font-size: 22px;
+      }
     }
   }
 }
