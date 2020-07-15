@@ -82,10 +82,9 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
-      transition: all ease 0.5s;
       &.activeMenu{
         display: flex;
-        transition: all ease 0.5s;
+        transition: display ease-in-out 0.5s;
       }
       @media @xs-max{
         display: none;
@@ -93,6 +92,7 @@
         text-align: center;
         width: 100%;
         padding: 15px 0 0;
+        transition: display ease-in-out 0.5s;
       }
 
       #menuLinks{

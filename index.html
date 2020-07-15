@@ -25,24 +25,29 @@
         outline: none;
       }
 
+      #body{
+        height: 100vh;
+        overflow-x: hidden;
+
+      }
       /* width */
-        body::-webkit-scrollbar {
+        #body::-webkit-scrollbar {
           width: 5px;
         }
 
         /* Track */
-        body::-webkit-scrollbar-track {
+        #body::-webkit-scrollbar-track {
           background: #888;
         }
 
         /* Handle */
-        body::-webkit-scrollbar-thumb {
+        #body::-webkit-scrollbar-thumb {
           background: #1E1E1E;
           /* border-radius: 10px; */
         }
 
         /* Handle on hover */
-        body::-webkit-scrollbar-thumb:hover {
+        #body::-webkit-scrollbar-thumb:hover {
           background: #000000db;
         }
     </style>
@@ -51,11 +56,16 @@
   <body style="overflow-x: hidden; overflow-y: auto;">
 
     <!-- Navbar -->
+    <!-- <div id="navbar">
+     
+    </div> -->
+
+    <div id="body">
+          <!-- Navbar -->
     <div id="navbar">
      
     </div>
-
-    <!-- Profile -->
+         <!-- Profile -->
     <div id="profile">
 
       <div id="profileContent">
@@ -99,13 +109,16 @@
         <img class="more_box_image" src="src/img/responsive.png" alt=""> 
         <div class="more_box_desc">
           <span class="more_box_title">
-            Responsive
+            UI / UX <br>
+            Responsive <br>
+            Clean <br>
+            Functional <br>
           </span>
-          <ul class="more_box_list">
+          <!-- <ul class="more_box_list">
             <li>Mobile</li>
             <li>iPad</li>
             <li>Desktop</li>
-          </ul>
+          </ul> -->
         </div>         
       </div>
     </div>
@@ -120,6 +133,7 @@
           <a class="footer_link" href="">GitHub</a>
         </div>
       </div>
+    </div>
     </div>
 
     <script type="text/javascript" src="src/navbar.js"></script>
