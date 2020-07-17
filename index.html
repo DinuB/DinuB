@@ -25,12 +25,12 @@
         outline: none;
       }
 
-      #body{
-        height: 100vh;
-        overflow-x: hidden;
-
-      }
-      /* width */
+      @media (min-width: 500px){
+        #body{
+          height: 100vh;
+          overflow-x: hidden;
+        }
+        /* width */
         #body::-webkit-scrollbar {
           width: 5px;
         }
@@ -50,22 +50,20 @@
         #body::-webkit-scrollbar-thumb:hover {
           background: #000000db;
         }
+      }
+
     </style>
 
   </head>
   <body style="overflow-x: hidden; overflow-y: auto;">
 
-    <!-- Navbar -->
-    <!-- <div id="navbar">
-     
-    </div> -->
-
     <div id="body">
-          <!-- Navbar -->
-    <div id="navbar">
-     
+    
+      <!-- Navbar -->
+    <div id="navbar"> 
     </div>
-         <!-- Profile -->
+    
+    <!-- Profile -->
     <div id="profile">
 
       <div id="profileContent">
@@ -111,14 +109,7 @@
           <span class="more_box_title">
             UI / UX <br>
             Responsive <br>
-            Clean <br>
-            Functional <br>
           </span>
-          <!-- <ul class="more_box_list">
-            <li>Mobile</li>
-            <li>iPad</li>
-            <li>Desktop</li>
-          </ul> -->
         </div>         
       </div>
     </div>
