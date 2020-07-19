@@ -1,0 +1,85 @@
+// Extra small
+@xs-min: ~'(min-width: 500px)';
+@xs-max: ~'(max-width: 499px)';
+
+// Small
+@sm-min: ~'(min-width: 800px)';
+@sm-max: ~'(max-width: 799px)';
+
+// Medium
+@md-min: ~'(min-width: 1025px)';
+@md-max: ~'(max-width: 1024px)';
+
+// Large
+@lg-min: ~'(min-width: 1200px)';
+@lg-max: ~'(max-width: 1199px)';
+
+// Extra large
+@xl-min: ~'(min-width: 1920px)';
+@xl-max: ~'(max-width: 1919px)';
+
+@font-face {
+  font-family: wallpoet;
+  src: url(../fonts/wallpoet/Wallpoet-Regular.ttf);
+}
+
+#moreBox{
+  margin: 0 15px;
+  @media @xs-max{
+    margin: 10px 15px 25px;
+  }
+  table{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    td{
+      height: 260px;
+    }
+
+  }
+  .textBox{
+    font-family: wallpoet;
+    font-size: 24px;
+    @media @xs-min{
+      background: #000000db;
+      color: #fff;
+    }
+  }
+  .imageBox{
+    img{
+      max-width: 260px;
+      width: 100%;
+      max-height: 260px;
+    }
+    padding: 15px;
+  }
+  .moreBoxMobile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @media @xs-max{
+      flex-direction: column;
+    }
+
+  }
+  #moreCode{
+    @media @xs-min{
+      flex-direction: row-reverse;
+    }
+  }
+  .moreContentBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media @xs-min{
+      flex-direction: row-reverse;
+      height: 260px;
+      max-width: 300px;
+    }
+  }
+}
+
+
