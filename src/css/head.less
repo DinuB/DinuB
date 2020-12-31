@@ -1,0 +1,110 @@
+// Extra small
+@xs-min: ~'(min-width: 500px)';
+@xs-max: ~'(max-width: 499px)';
+
+// Small
+@sm-min: ~'(min-width: 800px)';
+@sm-max: ~'(max-width: 799px)';
+
+// Medium
+@md-min: ~'(min-width: 1025px)';
+@md-max: ~'(max-width: 1024px)';
+
+// Large
+@lg-min: ~'(min-width: 1200px)';
+@lg-max: ~'(max-width: 1199px)';
+
+// Extra large
+@xl-min: ~'(min-width: 1920px)';
+@xl-max: ~'(max-width: 1919px)';
+
+@font-face {
+  font-family: wallpoet;
+  src: url(../fonts/wallpoet/Wallpoet-Regular.ttf);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+#head{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #1f1f1f;
+  color: #fff;
+
+  .container {
+    @media @sm-max {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      text-align: center;
+    }
+  }
+
+  .description {
+    margin: 15px 0 0;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+
+      li {
+        padding: 0 10px;
+        border-right: 1px solid #fff;
+        &:first-child {
+          padding: 0 10px 0 0;
+        }
+        &:last-child {
+          padding: 0 0 0 10px;
+          border-right: none;
+        }
+      }
+
+      @media @sm-max {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        li {
+          padding: 5px 0;
+          border-right: none;
+          &:first-child {
+            padding: 0 0 5px 0;
+          }
+          &:last-child {
+            padding: 5px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .social {
+    max-width: 160px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      max-width: 25px;
+    }
+  }
+}
+
+
+
